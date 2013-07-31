@@ -1,0 +1,25 @@
+/*
+ * Conor Gilmer (conor.gilmer@gmail.com)
+ * Stylesheet for my website.
+ * Just some fonts and formatting styles
+ */
+
+/* just centre the footer keep same size*/
+.footer, .push {
+	height: 564px; 
+	text-align: center;
+}
+ /*	background: url(img/My_Bloomsday.gif) right bottom;
+}*/
+
+/* format of the ™ superscript */
+p.sup {font-size:110%; vertical-align: top;}
+
+/* font for brandname */
+/*p.joyce {font-family: "Times New Roman", Times, serif;}*/
+
+/*joyce font from fonts2u (www.fonts2u.com) */
+p.joyce {font-family: "Joyce"}
+h1.joyce {font-family: "Joyce"}
+
+.hero-unit1 {background-image: url(../img/My_Bloomsday.gif);}

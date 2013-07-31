@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UCD Prototype - Conor Gilmer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My CSS -->
+    <link href="css/joycestylesheet.css" rel="stylesheet" media="screen">
+    <link href="css/conors.css" rel="stylesheet" media="screen">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+ <!-- MyBloomsday Favicon JJ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+<script>
+$(function() {
+   $( "#bloomform" ).validate({
+           rules: {
+                   first: "required",
+                   last:  "required",
+                   email: { email: true,
+			    required: true}
+           },
+		messages:{
+		first: "First name required",
+		last: "Last name required",
+		email: "Valid Email requierd"
+}
+   });
+});
+</script>
+  </head>
+    <body>
+
+    <!-- Navbar    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+<!--          <a class="brand" href="./index.html">Bootstrap</a> -->
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="about.html">About</a>
+              </li>
+                  <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Background<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li> <a href="joyce.html">James Joyce</a></li>
+                  <li> <a href="ulysses.html">Ulysses</a></li>
+                  <li> <a href="bloomsday.html">Bloomsday</a></li>
+                </ul>
+              </li>
+              <li class="">
+                <a href="app.html">App</a>
+              </li>
+              <li class="">
+                <a href="download.html">Download</a>
+              </li>
+              <li class="">
+                <a href="form.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+
+      <div class="hero-unit">
+	<img src="img/jjsq.gif" height="129" width="90" align="right" valign="top">
+
+        <h1 class="joyce">Contact MyBloomsday!</h1><p><br></p>
+ <a class="btn btn-primary btn-large" href="download.html">Download the App &raquo;</a>
+
+      </div>
+<div class="span12">
+  <h2>Contact My Bloomsday</h2>
+
+<form id="bloomform" class="well span10" action="sendemail.php" method="post">
+	<div class="row">
+	  <div class="span5">
+		<label>First Name</label>
+		<input type="text" class="span3" placeholder="Your First Name" name="first">
+		<label>Last Name</label>
+		<input type="text" class="span3" placeholder="Your Last Name" name="last">
+		<label>Email Address</label>
+		<div class="input-prepend">
+	        	<span class="add-on"><i class="icon-envelope"></i></span><input type="text" id="inputIcon" class="span2" style="width:233px" placeholder="Your email address" name="email">
+		</div>
+		<label>Describe your Interest
+		<select id="subject" name="type" class="span3">
+			<option value="na" selected="">Choose One:</option>
+			<option value="tourist">Tourist</option>
+			<option value="local">Local</option>
+			<option value="student">Student</option>
+			<option value="academic">Academic</option>
+			<option value="bookclub">Book Club</option>
+			<option value="performer">Performer</option>
+		</select>
+		</label>
+ 	</div>
+	<div class="span5">
+		<label>Message</label>
+		<textarea name="message" id="message" class="input-xlarge span5" rows="10"></textarea>
+	</div>
+      </div> <!-- row -->
+<button type="submit" class="btn btn-primary pull-right">Send</button>
+</form>
+</div>
+      <hr>
+   
+      <!--footer-->
+      <div class="footer"> 
+        <p> My BloomsDay<sup>TM</sup> Copyright &copy; (<a href="mailto:conor.gilmer@webelevate.ie">Conor Gilmer</a>) 2013</p>
+      </div>
+      <!--/footer-->
+    </div> <!-- /container -->
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+<!--<script type="text/javascript" src="js/conorsscript.js"></script>-->
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+    </html>
+
